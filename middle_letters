@@ -1,0 +1,8 @@
+# 
+As a user I want to input a word/string and return the middle letters
+If even return two middle letter
+If odd return middle letter
+
+# 
+We have to get a word through the constructor 
+It returns a string with the middle letters

@@ -7,8 +7,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+
+    @Test
+    public void test_returnAstring(){
+        App letters = new App();
+        assertEquals("es", letters.get_middle("test"));
     }
+
+    @Test
+    public void test_wordtesting(){
+        App letters = new App();
+        assertEquals("es", letters.get_middle("test"));
+        assertEquals("t", letters.get_middle("testing"));
+        assertEquals("dd", letters.get_middle("middle"));
+        assertEquals("A", letters.get_middle("A"));
+        assertEquals("of", letters.get_middle("of"));
+    }
+
+    
 }
